@@ -1,9 +1,9 @@
 //************ Set Interruppin ************
 
 int interruptPin1     = 33;   // For Start,Stop InterruptTimer
-int interruptPin2     = 25;   // For Reset InterrupTimer
+int interruptPin2     = 12;   // For Reset InterrupTimer
 int CountInterrupt33  = 0 ; 
-int CountInterrupt25  = 0 ;
+int CountInterrupt12  = 0 ;
 int StateTimer        = 0 ;   // 0 = Stop , 1 = Start...
 
 //************ Set Time ************
@@ -97,9 +97,9 @@ void Handleinterrupt1() {
   
 }
 void Handleinterrupt2() {
-  CountInterrupt25++;
-  Serial.print("Button 25 :");
-  Serial.print(CountInterrupt25);
+  CountInterrupt12++;
+  Serial.print("Button 12 :");
+  Serial.print(CountInterrupt12);
   Serial.print(" Time");
   Serial.println("");
   
